@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Proxy Anonyme</title>
+    <style>
+        body { font-family: Arial; text-align: center; }
+        iframe { width: 100%; height: 80vh; border: none; }
+    </style>
+</head>
+<body>
+    <h1>Proxy Anonyme</h1>
+    <input type="url" id="urlInput" placeholder="Entrez l'URL">
+    <button onclick="loadSite()">Charger</button>
+    <iframe id="proxyFrame"></iframe>
+    <script>
+        function loadSite() {
+            const url = document.getElementById('urlInput').value;
+            document.getElementById('proxyFrame').src = url;
+        }
+    </script>
+</body>
+</html>
